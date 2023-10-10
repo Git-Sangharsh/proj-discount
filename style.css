@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bangers&family=Changa:wght@800&family=Oswald:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.container{
+    min-width: 50vw;
+    min-height: 70vh;
+    background-color: aliceblue(143, 139, 139);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 50px;
+    background-color: violet;
+}
+
+
+  
+input{
+    min-width: 20vw;
+    min-height: 3vh;
+    margin: 20px;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.51);
+    border: none;
+    text-align: center;
+    transition: 0.3s;
+}
+
+input:hover{
+    background-color: skyblue;
+    scale: 1.1;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.51) ;
+    font-weight: 300;
+    border: 2px solid red;
+}
+
+input[type="text"]::placeholder{
+    text-align: center;  
+}
+
+h1{
+    font-size: 2.8rem;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Bangers', cursive;
+    font-family: 'Changa', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    color: orange;
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.51) ;
+    transition: 0.3s;
+}
+
+h1:hover{
+    scale: 1.1;
+    color: red;
+    /* color: black; */
+    text-shadow: 2px 5px 4px rgba(0, 0, 0, 0.51) ;
+
+}
+button{
+    background-color: white;
+    width: 80px;
+    height: 25px;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1em;
+    font-weight: bolder;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+button:hover{
+    background-color: skyblue;
+    scale: 1.1;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.51) ;
+
+}
+
+@media only screen and (max-width: 509px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .container{
+        display: flex;
+        width: 70vw;
+    }
+
+    .headd{
+        text-align: center;
+        font-size: 20px;
+    }
+
+  }
